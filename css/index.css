@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 136.7%;
+}
+
+section{
+    padding-top: 120px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #000;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #000;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.button{
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF;
+    padding: 22px 70px;
+    border-radius: 100px;
+    background: #000;
+    display: block;
+    width: 245px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.button:hover{
+    background: #3f3f3f;
+    font-size: 20px;
+}
+
+
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+
+.offer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 79px;
+}
+
+.offer{
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.introtex{
+    width: 423px;
+}
+
+.hero-img{
+    width: 465px;
+    height: 465px;
+}
+
+
+/* Features */
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.didgits-title{
+    text-align: center;
+}
+
+.didgits{
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    margin: 70px auto 0 auto;
+}
+
+.didgit-item{
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.didgit-icon{
+    width: 77px;
+    height: 77px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 20px;
+    border: 1px solid #000;
+    display: block;
+    padding: 25px 32px;
+    transition: all 0.5s ease;
+}
+
+.didgit-item:hover .didgit-icon{
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font-size: 28px;
+}
+
+.didgit-wrapp{
+    width: 609px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.didgit-title{
+    width: 609px;
+    margin: 0 auto;
+}
+
+.didgit-text{
+    width: 609px;
+}
+
+
+/* Practice */
+
+.practice-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 101px;
+    border-radius: 60px;
+    background: linear-gradient(148deg, #E8FFE8 0%, #D1F0FF 100%);
+    padding: 93px 168px 89px 122px;
+}
+
+.practice-img{
+    width: 287px;
+    height: 287px;
+    animation: 10s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.practice-block{
+    width: 432px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.practice-title{
+    width: 432px;
+}
+
+.practice-text{
+    width: 432px;
+}
+
+
+/* Footer */
+
+.footer-text{
+    padding: 120px 0;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+}
+
+
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Large: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .offer-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+    }
+    .introtex{
+        text-align: center;
+    }
+    .offer{
+        align-items: center;
+    }
+
+    .practice-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .practice-text{
+        text-align: center;
+    }
+    .practice-block{
+        align-items: center;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    } 
+    .didgits{
+        width: 320px;
+    }
+    .didgit-item{
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+    }
+    h2{
+        text-align: center;
+    }
+    .didgit-wrapp{
+        width: 320px;
+    }
+    h3{
+        width: 320px;
+        text-align: center;
+    }
+    .didgit-text{
+        width: 320px;
+        text-align: center;
+    }
+
+    .practice-wrap{
+        padding: 101px 144px;
+    }
+}
+
+/* Exstra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        max-width: 320px;
+        /* padding: 0 15px; */
+    }
+    .offer-wrapper{
+        width: 320px;
+    }
+    h1{
+        width: 320px;
+    }
+    .introtex{
+        width: 320px;
+    }
+    .hero-img{
+        width: 320px;
+        height: 320px;
+    }
+    .offer{
+        width: 320px;
+    }
+
+    .practice-wrap{
+        padding: 70px 20px;
+    }
+    .practice-title{
+        width: 208px;
+    }
+    .practice-text{
+        width: 208px;
+    }
+    .practice-block{
+        width: 208px;
+    }
+    .practice-img{
+        width: 201px;
+        height: 201px;
+    }
+}
